@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(../images/stars.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.birthday-card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #795d04;
+    box-shadow: 10px 15px #888888;
+    align-items: center;
+    text-align: center;
+    padding: 5% 7%;
+    color: #ba6d89;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    text-shadow: 1px 1px #888888;
+    background: linear-gradient(#f5e2a0, #ac9034);
+    animation: squish 2s ease 2s 3 normal forwards;
+}
+.birthday-card h4{
+    font-size: 16px;
+    font-weight: 300;
+}
+.birthday-card h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.birthday-card p{
+    font-size: 22px;
+    font-weight: 300;
+}
+.party_details li{
+    font-size: 14px;
+    font-weight: 700;
+}
+.cake-logo{
+    /* width: 30%; */
+    padding: 5% 0%;
+    font-size: 30px;
+    animation: light 2s infinite; 
+}
+.cake-logo i{
+    width: 6em;
+}
+@keyframes light{
+    from{color: #ef1565;}
+    to{color: #ba6d89;}
+}
+.main_info{
+    animation: slideInDown 2s 2s;
+}
+
+@keyframes squish {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
